@@ -51,6 +51,9 @@ extension NBACategoiresViewController: UITableViewDelegate,UITableViewDataSource
         case 1:
             let vc = UIStoryboard(name: "AllStar", bundle: nil).instantiateViewController(withIdentifier: "allStar")
             navigationController?.pushViewController(vc, animated: true)
+        case 2:
+            let vc = UIStoryboard(name: "Christmas", bundle: nil).instantiateViewController(withIdentifier: "christmas")
+            navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }

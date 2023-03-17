@@ -25,7 +25,7 @@ class FootballVideoViewController: UIViewController {
         videoPlayer.load(withVideoId: videoLink ?? "")
         videoPlayer.playVideo()
         if #available(iOS 13.0, *) {
-            configureNavigationBar(largeTitleColor: .gray, backgoundColor: .systemBackground, tintColor: .gray, title: navigationTitle ?? "", preferredLargeTitle: false)
+            configureNavigationBar(largeTitleColor: .gray, backgoundColor: .systemYellow, tintColor: .gray, title: navigationTitle ?? "", preferredLargeTitle: false)
         } else {
             // Fallback on earlier versions
         }

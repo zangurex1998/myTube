@@ -41,6 +41,12 @@
 		80541CA429C4AFC2008571B7 /* AllStarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80541CA329C4AFC2008571B7 /* AllStarViewController.swift */; };
 		80541CA829C4B172008571B7 /* AllStarTableViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80541CA629C4B172008571B7 /* AllStarTableViewTableViewCell.swift */; };
 		80541CA929C4B172008571B7 /* AllStarTableViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80541CA729C4B172008571B7 /* AllStarTableViewTableViewCell.xib */; };
+		80541CAC29C4B783008571B7 /* Christmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80541CAB29C4B783008571B7 /* Christmas.swift */; };
+		80541CAE29C4B7B4008571B7 /* ChirstmasApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80541CAD29C4B7B4008571B7 /* ChirstmasApiManager.swift */; };
+		80541CB129C4B855008571B7 /* Christmas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80541CB029C4B855008571B7 /* Christmas.storyboard */; };
+		80541CB329C4B865008571B7 /* ChristmasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80541CB229C4B865008571B7 /* ChristmasViewController.swift */; };
+		80541CB729C4B8D8008571B7 /* ChristmasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80541CB529C4B8D8008571B7 /* ChristmasTableViewCell.swift */; };
+		80541CB829C4B8D8008571B7 /* ChristmasTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80541CB629C4B8D8008571B7 /* ChristmasTableViewCell.xib */; };
 		8070068F29C3656A00FD30D3 /* LikedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070068D29C3656A00FD30D3 /* LikedTableViewCell.swift */; };
 		8070069029C3656A00FD30D3 /* LikedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8070068E29C3656A00FD30D3 /* LikedTableViewCell.xib */; };
 		8098F70A29C377B400704E94 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8098F70829C377B400704E94 /* PlaylistTableViewCell.swift */; };
@@ -111,6 +117,12 @@
 		80541CA329C4AFC2008571B7 /* AllStarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStarViewController.swift; sourceTree = "<group>"; };
 		80541CA629C4B172008571B7 /* AllStarTableViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStarTableViewTableViewCell.swift; sourceTree = "<group>"; };
 		80541CA729C4B172008571B7 /* AllStarTableViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllStarTableViewTableViewCell.xib; sourceTree = "<group>"; };
+		80541CAB29C4B783008571B7 /* Christmas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Christmas.swift; sourceTree = "<group>"; };
+		80541CAD29C4B7B4008571B7 /* ChirstmasApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChirstmasApiManager.swift; sourceTree = "<group>"; };
+		80541CB029C4B855008571B7 /* Christmas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Christmas.storyboard; sourceTree = "<group>"; };
+		80541CB229C4B865008571B7 /* ChristmasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasViewController.swift; sourceTree = "<group>"; };
+		80541CB529C4B8D8008571B7 /* ChristmasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasTableViewCell.swift; sourceTree = "<group>"; };
+		80541CB629C4B8D8008571B7 /* ChristmasTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChristmasTableViewCell.xib; sourceTree = "<group>"; };
 		8070068D29C3656A00FD30D3 /* LikedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedTableViewCell.swift; sourceTree = "<group>"; };
 		8070068E29C3656A00FD30D3 /* LikedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikedTableViewCell.xib; sourceTree = "<group>"; };
 		8098F70829C377B400704E94 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
@@ -362,6 +374,35 @@
 			path = allStarTableView;
 			sourceTree = "<group>";
 		};
+		80541CAA29C4B774008571B7 /* ChristmasFiles */ = {
+			isa = PBXGroup;
+			children = (
+				80541CB429C4B8C6008571B7 /* ChristmasTableView */,
+				80541CAF29C4B848008571B7 /* ChristmasViewController */,
+				80541CAB29C4B783008571B7 /* Christmas.swift */,
+				80541CAD29C4B7B4008571B7 /* ChirstmasApiManager.swift */,
+			);
+			path = ChristmasFiles;
+			sourceTree = "<group>";
+		};
+		80541CAF29C4B848008571B7 /* ChristmasViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80541CB029C4B855008571B7 /* Christmas.storyboard */,
+				80541CB229C4B865008571B7 /* ChristmasViewController.swift */,
+			);
+			path = ChristmasViewController;
+			sourceTree = "<group>";
+		};
+		80541CB429C4B8C6008571B7 /* ChristmasTableView */ = {
+			isa = PBXGroup;
+			children = (
+				80541CB529C4B8D8008571B7 /* ChristmasTableViewCell.swift */,
+				80541CB629C4B8D8008571B7 /* ChristmasTableViewCell.xib */,
+			);
+			path = ChristmasTableView;
+			sourceTree = "<group>";
+		};
 		8070068C29C3655600FD30D3 /* lLikedTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,6 +461,7 @@
 		80FA5AB429C3208000F8CCAE /* SportsCategories */ = {
 			isa = PBXGroup;
 			children = (
+				80541CAA29C4B774008571B7 /* ChristmasFiles */,
 				80541CA029C4AFA4008571B7 /* AllStarViewController */,
 				80541C9B29C4AEEB008571B7 /* AllStar */,
 				80541C8729C48AFD008571B7 /* NBATableView */,
@@ -584,7 +626,9 @@
 				80541CA929C4B172008571B7 /* AllStarTableViewTableViewCell.xib in Resources */,
 				8021EDB529C1D51300F70ADF /* Assets.xcassets in Resources */,
 				8070069029C3656A00FD30D3 /* LikedTableViewCell.xib in Resources */,
+				80541CB829C4B8D8008571B7 /* ChristmasTableViewCell.xib in Resources */,
 				80541CA229C4AFB5008571B7 /* AllStar.storyboard in Resources */,
+				80541CB129C4B855008571B7 /* Christmas.storyboard in Resources */,
 				8021EDB029C1D51100F70ADF /* TabBar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -648,8 +692,10 @@
 				8021EDB329C1D51100F70ADF /* myTube.xcdatamodeld in Sources */,
 				8037DC3B29C44C0A0085FEED /* UFC.swift in Sources */,
 				80FA5AA329C3144200F8CCAE /* AppTabBarController.swift in Sources */,
+				80541CAE29C4B7B4008571B7 /* ChirstmasApiManager.swift in Sources */,
 				80FA5AA929C3156100F8CCAE /* HomeViewController.swift in Sources */,
 				80FA5ADA29C32FAA00F8CCAE /* FootballVideoViewController.swift in Sources */,
+				80541CB329C4B865008571B7 /* ChristmasViewController.swift in Sources */,
 				80541CA429C4AFC2008571B7 /* AllStarViewController.swift in Sources */,
 				8021EDA929C1D51100F70ADF /* AppDelegate.swift in Sources */,
 				80541C9D29C4AEF7008571B7 /* AllStarAPi.swift in Sources */,
@@ -658,10 +704,12 @@
 				80541C9529C4A823008571B7 /* BasketBallCategoriesViewController.swift in Sources */,
 				80FA5ACC29C32B4B00F8CCAE /* FootballAPiManager.swift in Sources */,
 				8070068F29C3656A00FD30D3 /* LikedTableViewCell.swift in Sources */,
+				80541CB729C4B8D8008571B7 /* ChristmasTableViewCell.swift in Sources */,
 				80FA5ABF29C3235B00F8CCAE /* SportsCategories.swift in Sources */,
 				80541C8129C48A24008571B7 /* NBADatasource.swift in Sources */,
 				80FA5ABD29C321CC00F8CCAE /* Extension+TabbarHeaderExtension.swift in Sources */,
 				8037DC3429C44B5E0085FEED /* UFCViewController.swift in Sources */,
+				80541CAC29C4B783008571B7 /* Christmas.swift in Sources */,
 				80FA5AD429C32D6500F8CCAE /* FootballTableViewCell.swift in Sources */,
 				80FA5ACA29C32B0300F8CCAE /* Football .swift in Sources */,
 				80541C8629C48ABB008571B7 /* NBACategoiresViewController.swift in Sources */,
