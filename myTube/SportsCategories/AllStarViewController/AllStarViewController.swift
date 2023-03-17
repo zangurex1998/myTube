@@ -25,6 +25,7 @@ class AllStarViewController: UIViewController {
         allStar.fetchAllStar { [weak self] fetchData in
             self?.fetchedAllstar = fetchData.NBAallStar
         }
+        configureNavigationBar(largeTitleColor: .gray, backgoundColor: .systemYellow, tintColor: .gray, title: "All Star", preferredLargeTitle: false)
         
     }
     

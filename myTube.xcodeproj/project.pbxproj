@@ -51,6 +51,12 @@
 		8070069029C3656A00FD30D3 /* LikedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8070068E29C3656A00FD30D3 /* LikedTableViewCell.xib */; };
 		8098F70A29C377B400704E94 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8098F70829C377B400704E94 /* PlaylistTableViewCell.swift */; };
 		8098F70B29C377B400704E94 /* PlaylistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8098F70929C377B400704E94 /* PlaylistTableViewCell.xib */; };
+		80D07A9C29C4C1D1003029E8 /* BestOfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D07A9B29C4C1D1003029E8 /* BestOfModel.swift */; };
+		80D07A9E29C4C1D9003029E8 /* BestOfApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D07A9D29C4C1D9003029E8 /* BestOfApiManager.swift */; };
+		80D07AA129C4C21F003029E8 /* BestOf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D07AA029C4C21F003029E8 /* BestOf.storyboard */; };
+		80D07AA329C4C230003029E8 /* BestOfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D07AA229C4C230003029E8 /* BestOfViewController.swift */; };
+		80D07AA729C4C28E003029E8 /* BestOfTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D07AA529C4C28E003029E8 /* BestOfTableViewCell.swift */; };
+		80D07AA829C4C28E003029E8 /* BestOfTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D07AA629C4C28E003029E8 /* BestOfTableViewCell.xib */; };
 		80FA5AA129C30BD300F8CCAE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 80FA5AA029C30BD300F8CCAE /* Kingfisher */; };
 		80FA5AA329C3144200F8CCAE /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FA5AA229C3144200F8CCAE /* AppTabBarController.swift */; };
 		80FA5AA729C3155100F8CCAE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FA5AA629C3155100F8CCAE /* Home.storyboard */; };
@@ -127,6 +133,12 @@
 		8070068E29C3656A00FD30D3 /* LikedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikedTableViewCell.xib; sourceTree = "<group>"; };
 		8098F70829C377B400704E94 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
 		8098F70929C377B400704E94 /* PlaylistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistTableViewCell.xib; sourceTree = "<group>"; };
+		80D07A9B29C4C1D1003029E8 /* BestOfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestOfModel.swift; sourceTree = "<group>"; };
+		80D07A9D29C4C1D9003029E8 /* BestOfApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestOfApiManager.swift; sourceTree = "<group>"; };
+		80D07AA029C4C21F003029E8 /* BestOf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BestOf.storyboard; sourceTree = "<group>"; };
+		80D07AA229C4C230003029E8 /* BestOfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestOfViewController.swift; sourceTree = "<group>"; };
+		80D07AA529C4C28E003029E8 /* BestOfTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestOfTableViewCell.swift; sourceTree = "<group>"; };
+		80D07AA629C4C28E003029E8 /* BestOfTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BestOfTableViewCell.xib; sourceTree = "<group>"; };
 		80FA5AA229C3144200F8CCAE /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		80FA5AA629C3155100F8CCAE /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		80FA5AA829C3156100F8CCAE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -421,6 +433,43 @@
 			path = PlaylistTableViewCell;
 			sourceTree = "<group>";
 		};
+		80D07A9929C4C077003029E8 /* bestOf2022-23NBA */ = {
+			isa = PBXGroup;
+			children = (
+				80D07AA429C4C277003029E8 /* TableView */,
+				80D07A9F29C4C210003029E8 /* BestOfViewController */,
+				80D07A9A29C4C087003029E8 /* APIManager */,
+			);
+			path = "bestOf2022-23NBA";
+			sourceTree = "<group>";
+		};
+		80D07A9A29C4C087003029E8 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				80D07A9B29C4C1D1003029E8 /* BestOfModel.swift */,
+				80D07A9D29C4C1D9003029E8 /* BestOfApiManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		80D07A9F29C4C210003029E8 /* BestOfViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80D07AA029C4C21F003029E8 /* BestOf.storyboard */,
+				80D07AA229C4C230003029E8 /* BestOfViewController.swift */,
+			);
+			path = BestOfViewController;
+			sourceTree = "<group>";
+		};
+		80D07AA429C4C277003029E8 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				80D07AA529C4C28E003029E8 /* BestOfTableViewCell.swift */,
+				80D07AA629C4C28E003029E8 /* BestOfTableViewCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		80FA5AA429C3144F00F8CCAE /* Launch */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,6 +510,7 @@
 		80FA5AB429C3208000F8CCAE /* SportsCategories */ = {
 			isa = PBXGroup;
 			children = (
+				80D07A9929C4C077003029E8 /* bestOf2022-23NBA */,
 				80541CAA29C4B774008571B7 /* ChristmasFiles */,
 				80541CA029C4AFA4008571B7 /* AllStarViewController */,
 				80541C9B29C4AEEB008571B7 /* AllStar */,
@@ -613,6 +663,7 @@
 				80541C8B29C48B1B008571B7 /* NBACategoriesTableViewCell.xib in Resources */,
 				80FA5AB129C3166E00F8CCAE /* Playlist.storyboard in Resources */,
 				80FA5AD529C32D6500F8CCAE /* FootballTableViewCell.xib in Resources */,
+				80D07AA129C4C21F003029E8 /* BestOf.storyboard in Resources */,
 				8021EDB829C1D51300F70ADF /* LaunchScreen.storyboard in Resources */,
 				8037DC3929C44B7D0085FEED /* UFCTableViewCell.xib in Resources */,
 				8098F70B29C377B400704E94 /* PlaylistTableViewCell.xib in Resources */,
@@ -627,6 +678,7 @@
 				8021EDB529C1D51300F70ADF /* Assets.xcassets in Resources */,
 				8070069029C3656A00FD30D3 /* LikedTableViewCell.xib in Resources */,
 				80541CB829C4B8D8008571B7 /* ChristmasTableViewCell.xib in Resources */,
+				80D07AA829C4C28E003029E8 /* BestOfTableViewCell.xib in Resources */,
 				80541CA229C4AFB5008571B7 /* AllStar.storyboard in Resources */,
 				80541CB129C4B855008571B7 /* Christmas.storyboard in Resources */,
 				8021EDB029C1D51100F70ADF /* TabBar.storyboard in Resources */,
@@ -685,6 +737,7 @@
 				8021EDC429C1D5CA00F70ADF /* Categories .swift in Sources */,
 				80541C8A29C48B1B008571B7 /* NBACategoriesTableViewCell.swift in Sources */,
 				80FA5AAE29C315F100F8CCAE /* LikedViewController.swift in Sources */,
+				80D07AA729C4C28E003029E8 /* BestOfTableViewCell.swift in Sources */,
 				8098F70A29C377B400704E94 /* PlaylistTableViewCell.swift in Sources */,
 				80FA5AC129C3238000F8CCAE /* SportsDataSource.swift in Sources */,
 				80541C9F29C4AF43008571B7 /* AllStarProtocol.swift in Sources */,
@@ -701,12 +754,15 @@
 				80541C9D29C4AEF7008571B7 /* AllStarAPi.swift in Sources */,
 				80FA5AB829C3209F00F8CCAE /* SportsViewController.swift in Sources */,
 				80541C9929C4A860008571B7 /* BasketballCategoriesTableViewCell.swift in Sources */,
+				80D07A9E29C4C1D9003029E8 /* BestOfApiManager.swift in Sources */,
 				80541C9529C4A823008571B7 /* BasketBallCategoriesViewController.swift in Sources */,
 				80FA5ACC29C32B4B00F8CCAE /* FootballAPiManager.swift in Sources */,
 				8070068F29C3656A00FD30D3 /* LikedTableViewCell.swift in Sources */,
 				80541CB729C4B8D8008571B7 /* ChristmasTableViewCell.swift in Sources */,
 				80FA5ABF29C3235B00F8CCAE /* SportsCategories.swift in Sources */,
+				80D07A9C29C4C1D1003029E8 /* BestOfModel.swift in Sources */,
 				80541C8129C48A24008571B7 /* NBADatasource.swift in Sources */,
+				80D07AA329C4C230003029E8 /* BestOfViewController.swift in Sources */,
 				80FA5ABD29C321CC00F8CCAE /* Extension+TabbarHeaderExtension.swift in Sources */,
 				8037DC3429C44B5E0085FEED /* UFCViewController.swift in Sources */,
 				80541CAC29C4B783008571B7 /* Christmas.swift in Sources */,
