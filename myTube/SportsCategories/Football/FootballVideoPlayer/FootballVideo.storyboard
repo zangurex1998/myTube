@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Football Video View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="footballVideoPlayer" id="Y6W-OH-hqX" customClass="FootballVideoViewController" customModule="myTube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DeU-W3-2VO" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="153" width="393" height="350"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="LBZ-iy-YrX"/>
+                                    <constraint firstAttribute="height" constant="350" id="bKs-8k-kQs"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYe-Kf-Krd">
+                                <rect key="frame" x="10" y="523" width="373" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKI-Pc-csk">
+                                <rect key="frame" x="10" y="568" width="101.33333333333333" height="37.333333333333371"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="  Like ">
+                                    <imageReference key="image" image="heart" catalog="system" variableValue="0.20000000000000007"/>
+                                    <fontDescription key="titleFontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapLikeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CI9-Jd-xkq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhD-1W-6t3">
+                                <rect key="frame" x="10" y="617.33333333333337" width="171.33333333333334" height="34.333333333333371"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" imagePlacement="trailing" title="Add To Playlist   ">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapAddToPlaylist:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JS4-RK-ZKj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DeU-W3-2VO" secondAttribute="trailing" id="6kf-dL-Xrl"/>
+                            <constraint firstItem="cKI-Pc-csk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="ALc-oc-ihb"/>
+                            <constraint firstItem="bhD-1W-6t3" firstAttribute="top" secondItem="cKI-Pc-csk" secondAttribute="bottom" constant="12" id="OYU-mH-da1"/>
+                            <constraint firstItem="qYe-Kf-Krd" firstAttribute="top" secondItem="DeU-W3-2VO" secondAttribute="bottom" constant="20" id="Qmr-Y1-dvs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qYe-Kf-Krd" secondAttribute="trailing" constant="10" id="Sp9-q2-LDi"/>
+                            <constraint firstItem="bhD-1W-6t3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="WlM-qb-ZyA"/>
+                            <constraint firstItem="DeU-W3-2VO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="cEP-vK-sSr"/>
+                            <constraint firstItem="DeU-W3-2VO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mrY-6c-RLY"/>
+                            <constraint firstItem="cKI-Pc-csk" firstAttribute="top" secondItem="qYe-Kf-Krd" secondAttribute="bottom" constant="12" id="rEp-xz-3eo"/>
+                            <constraint firstItem="qYe-Kf-Krd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="wM6-4A-daW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="peN-K7-EpW"/>
+                    <connections>
+                        <outlet property="addToPlaylistButton" destination="bhD-1W-6t3" id="FEO-a7-Dai"/>
+                        <outlet property="headerText" destination="qYe-Kf-Krd" id="woF-VF-MFv"/>
+                        <outlet property="likeButton" destination="cKI-Pc-csk" id="fmZ-7C-A65"/>
+                        <outlet property="videoPlayer" destination="DeU-W3-2VO" id="rzf-QW-qXP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980.91603053435108" y="-34.507042253521128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hld-nf-6ky">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Bd-3x-cGc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2mR-OX-5M7">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="D1w-4q-ux8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uKv-kc-zqx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Liked View Controller-->
+        <scene sceneID="B0G-Ag-e1d">
+            <objects>
+                <viewController id="HxB-P8-Cc7" customClass="LikedViewController" customModule="myTube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v6c-Wf-9em">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0M-Uc-Q52">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liked Videos Will Appear Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5G-RH-qXV">
+                                        <rect key="frame" x="61.333333333333343" y="345.66666666666669" width="270.33333333333326" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mcy-Es-yNn">
+                                        <rect key="frame" x="0.0" y="0.0" width="385" height="715"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="mcy-Es-yNn" firstAttribute="top" secondItem="D0M-Uc-Q52" secondAttribute="top" id="752-Ha-2c5"/>
+                                    <constraint firstItem="w5G-RH-qXV" firstAttribute="centerY" secondItem="D0M-Uc-Q52" secondAttribute="centerY" id="UAM-tE-T4Q"/>
+                                    <constraint firstItem="w5G-RH-qXV" firstAttribute="centerX" secondItem="D0M-Uc-Q52" secondAttribute="centerX" id="We6-mU-yb7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oXw-r2-KWH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D0M-Uc-Q52" firstAttribute="leading" secondItem="oXw-r2-KWH" secondAttribute="leading" id="1ed-KT-Hny"/>
+                            <constraint firstItem="mcy-Es-yNn" firstAttribute="leading" secondItem="oXw-r2-KWH" secondAttribute="leading" id="4md-Hg-0qy"/>
+                            <constraint firstItem="oXw-r2-KWH" firstAttribute="trailing" secondItem="mcy-Es-yNn" secondAttribute="trailing" constant="8" id="Lrb-Jd-17W"/>
+                            <constraint firstItem="D0M-Uc-Q52" firstAttribute="centerX" secondItem="v6c-Wf-9em" secondAttribute="centerX" id="TZk-Co-AhI"/>
+                            <constraint firstItem="D0M-Uc-Q52" firstAttribute="top" secondItem="oXw-r2-KWH" secondAttribute="top" id="kVj-Tj-mfb"/>
+                            <constraint firstItem="D0M-Uc-Q52" firstAttribute="bottom" secondItem="oXw-r2-KWH" secondAttribute="bottom" id="nmt-eD-5gs"/>
+                            <constraint firstItem="oXw-r2-KWH" firstAttribute="bottom" secondItem="mcy-Es-yNn" secondAttribute="bottom" id="tZo-Ep-JpQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VSp-gM-i1Z"/>
+                    <connections>
+                        <outlet property="emptyView" destination="D0M-Uc-Q52" id="BIE-dT-rN1"/>
+                        <outlet property="tableView" destination="mcy-Es-yNn" id="4TC-Dq-W40"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJg-Y2-CLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1182.4427480916031" y="60.563380281690144"/>
+        </scene>
+        <!--Liked-->
+        <scene sceneID="yav-90-XJt">
+            <objects>
+                <navigationController storyboardIdentifier="likedNC" automaticallyAdjustsScrollViewInsets="NO" id="1wP-af-Dfq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Liked" image="heart.fill" catalog="system" id="LSH-mt-e8z"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Nj-ez-oB1">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HxB-P8-Cc7" kind="relationship" relationship="rootViewController" id="51R-Kg-AzC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lID-Rs-VDL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255.72519083969465" y="60.563380281690144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
