@@ -6,7 +6,8 @@
 //
 
 import Foundation
-
+import UIKit
 struct NBACategories{
     let name: String
+    let image: UIImage
 }

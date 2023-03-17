@@ -13,7 +13,8 @@ class NBACategoriesTableViewCell: UITableViewCell {
     @IBOutlet weak var categoriesLbl: UILabel!
 
     
-   
+    @IBOutlet weak var categoryImage: UIImageView!
+    
     
     
     override func awakeFromNib() {
@@ -24,6 +25,7 @@ class NBACategoriesTableViewCell: UITableViewCell {
     
     func configure(with nbaCat: NBACategories){
         categoriesLbl.text = nbaCat.name
+        categoryImage.image = nbaCat.image
     }
  
     

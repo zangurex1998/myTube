@@ -17,6 +17,7 @@ class NBACategoiresViewController: UIViewController {
         super.viewDidLoad()
         setUpTableView()
         configureNavigationBar(largeTitleColor: .gray, backgoundColor: .systemYellow, tintColor: .gray, title: "Categories", preferredLargeTitle: true)
+        navigationItem.backButtonTitle = ""
     }
     
     private func setUpTableView(){
@@ -41,6 +42,18 @@ extension NBACategoiresViewController: UITableViewDelegate,UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "NBACategoriesTableViewCell", for: indexPath) as! NBACategoriesTableViewCell
         cell.configure(with: shared[indexPath.row])
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row{
+        case 0 :
+            let vc = UIStoryboard(name: "BasketBallCategories", bundle: nil).instantiateViewController(withIdentifier: "basketballCategories")
+            navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = UIStoryboard(name: "AllStar", bundle: nil).instantiateViewController(withIdentifier: "allStar")
+            navigationController?.pushViewController(vc, animated: true)
+        default:
+            break
+        }
     }
     
     

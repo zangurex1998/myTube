@@ -23,7 +23,7 @@
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NBA" translatesAutoresizingMaskIntoConstraints="NO" id="xD4-sc-OLf">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xD4-sc-OLf">
                         <rect key="frame" x="10" y="10" width="29" height="29"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="29" id="329-Bv-J7y"/>
@@ -54,12 +54,12 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="categoriesLbl" destination="nXR-ts-pen" id="EBi-KM-oNi"/>
+                <outlet property="categoryImage" destination="xD4-sc-OLf" id="el7-ix-Mpe"/>
             </connections>
             <point key="canvasLocation" x="96.18320610687023" y="21.47887323943662"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="NBA" width="3840" height="2160"/>
         <image name="chevron.forward" catalog="system" width="97" height="128"/>
     </resources>
 </document>
